@@ -1,0 +1,353 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.63;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Container Style */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Style */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+header .logo {
+    float: left;
+    width: 200px; 
+    height: 50px; 
+    margin: 10px;
+    background: url('images/logo.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    padding: 10px;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #575757;
+}
+
+/* Help Section Style */
+.help {
+    padding: 100px 0 60px;
+    background: #fff;
+}
+
+.help h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+    position: relative;
+}
+
+.help h2::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background: #e8491d;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Help Items Style */
+.help .help-grid {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.help .help-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.help .help-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.help .help-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.help .help-item h3 {
+    margin: 15px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.help .help-item p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 15px;
+}
+
+.help .help-item a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.help .help-item a:hover {
+    background: #e8491d;
+}
+
+/* Footer Style */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+footer .logo img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+footer .social {
+    margin: 20px 0;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #e8491d;
+}
+
+footer .subscription {
+    margin: 20px 0;
+}
+
+footer .subscription h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+footer .subscription form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .subscription input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+footer .subscription button {
+    padding: 10px 20px;
+    border: none;
+    background: #e8491d;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+footer .subscription button:hover {
+    background: #cf3f1a;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+footer a {
+    color: #e8491d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #cf3f1a;
+}
+
+footer .feedback {
+    margin-top: 20px;
+}
+
+footer .feedback a {
+    display: inline-block;
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+footer .feedback a:hover {
+    background: #cf3f1a;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        height: 110px;
+    }
+
+    header .logo {
+        margin: 0;
+        width: 170px; /* Set smaller width for the logo */
+        height: 60px; /* Maintain aspect ratio */
+        background: url('images/logo.png') no-repeat center center/cover;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav details {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav details summary {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    header nav details summary svg {
+        margin-left: 8px; /* Increase space between text and icon */
+    }
+
+    header nav details ul {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 5px;
+        padding: 10px;
+        list-style: none;
+    }
+
+    header nav details ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav details ul li a {
+        display: block;
+        padding: 5px 10px;
+        color: #fff;
+    }
+
+    .menu-bar {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: auto; /* Adjust width to fit the content */
+        height: 35px; /* Adjust height */
+    }
+
+    .menu-bar svg {
+        width: 40px; /* Fixed width for the icon */
+        height: 35px; /* Fixed height for the icon */
+        fill: #fff;
+    }
+}
+
+/* Hide the menu bar in desktop view */
+.menu-bar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header .menu-bar {
+        display: flex;
+    }
+}
