@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Time - Contact Us</title>
+    <link rel="stylesheet" href="styles-contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <div class="logo" aria-label="Party Time Logo">
+            </div>
+            <nav role="navigation" aria-label="Main Navigation">
+                <details class="menu-bar">
+                    <summary aria-label="Menu">
+                        Menu
+                        <svg viewBox="0 0 100 80" width="40" height="40">
+                            <rect width="100" height="20"></rect>
+                            <rect y="30" width="100" height="20"></rect>
+                            <rect y="60" width="100" height="20"></rect>
+                        </svg>
+                    </summary>
+                    <ul>
+                        <li><a href="index.html" aria-label="Home">Home</a></li>
+                        <li><a href="about.html" aria-label="About Us">About Us</a></li>
+                        <li><a href="services.html" aria-label="Services">Services</a></li>
+                        <li><a href="packages.html" aria-label="Packages">Packages</a></li>
+                        <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+                        <li><a href="help.html" aria-label="Help & Advice">Help & Advice</a></li>
+                    </ul>
+                </details>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Home</a></li>
+                    <li><a href="about.html" aria-label="About Us">About Us</a></li>
+                    <li><a href="services.html" aria-label="Services">Services</a></li>
+                    <li><a href="packages.html" aria-label="Packages">Packages</a></li>
+                    <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+                    <li><a href="help.html" aria-label="Help & Advice">Help & Advice</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br>
+    <main role="main">
+        <section class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Contact Us</h2>
+                <form class="contact-form" aria-label="Contact Form" enctype="multipart/form-data">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-label="Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-label="Email">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required aria-label="Phone Number">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required aria-label="Message"></textarea>
+                    <label for="file">Choose File</label>
+                    <input type="file" id="file" name="file" aria-label="Upload File">
+                    <span class="file-name" id="file-name">No file chosen</span>
+                    <br> <!-- Added to ensure "Submit" button is on the next line -->
+                    <button type="submit" aria-label="Submit">Submit</button>
+                </form>
+            </div>
+        </section>
+          
+        <br><br>
+        <section class="feedback" id="feedback" aria-labelledby="feedback-heading">
+            <div class="container">
+                <h2 id="feedback-heading">Give Us Your Feedback</h2>
+                <form class="feedback-form" aria-label="Feedback Form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-label="Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-label="Email">
+                    <label for="feedback">Feedback</label>
+                    <textarea id="message" name="message" rows="5" required aria-label="Feedback Message"></textarea>
+                    <button type="submit" aria-label="Submit Feedback">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 Party Time. All rights reserved.</p>
+            <div class="social" aria-label="Social Media Links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

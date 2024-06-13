@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Time - Packages</title>
+    <link rel="stylesheet" href="styles-packages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <div class="logo" aria-label="Party Time Logo"></div>
+            <nav role="navigation" aria-label="Main Navigation">
+                <details class="menu-bar">
+                    <summary>
+                        Menu
+                        <svg viewBox="0 0 100 80" width="40" height="40" aria-hidden="true">
+                            <rect width="100" height="20"></rect>
+                            <rect y="30" width="100" height="20"></rect>
+                            <rect y="60" width="100" height="20"></rect>
+                        </svg>
+                    </summary>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="help.html">Help & Advice</a></li>
+                    </ul>
+                </details>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="help.html">Help & Advice</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br>
+    <main>
+        <section class="packages" role="region" aria-labelledby="packages-heading">
+            <div class="container">
+                <h2 id="packages-heading">Our Packages</h2>
+                <div class="packages-grid">
+                    <div class="package-item" role="article" aria-labelledby="bronze-package-heading">
+                        <img src="images/BronzePackage.png" alt="Bronze Package">
+                        <h3 id="bronze-package-heading">Bronze Package</h3>
+                        <p>Perfect for small gatherings and intimate events.</p>
+                        <div class="details">
+                            <p><strong>Features:</strong></p>
+                            <p>- Room decorations – balloons, banners</p>
+                            <p>- Table decorations – centrepieces, gifts</p>
+                            <p>- DJ entertainment</p>
+                            <p>- Cold buffet</p>
+                        </div>
+                        <p class="price">$299</p>
+                        <a href="contact.html" class="btn-secondary" aria-label="Choose Bronze Package">Order</a>
+                    </div>
+                    <div class="package-item" role="article" aria-labelledby="silver-package-heading">
+                        <img src="images/SilverPackage.png" alt="Silver Package">
+                        <h3 id="silver-package-heading">Silver Package</h3>
+                        <p>Ideal for medium-sized events with more features.</p>
+                        <div class="details">
+                            <p><strong>Features:</strong></p>
+                            <p>- All from Bronze package plus:</p>
+                            <p>- Invitation design and handling</p>
+                            <p>- Party cost clean up</p>
+                            <p>- Live band entertainment</p>
+                            <p>- Cold buffet and soft drinks</p>
+                        </div>
+                        <p class="price">$499</p>
+                        <a href="contact.html" class="btn-secondary" aria-label="Choose Bronze Package">Order</a>
+                    </div>
+                    <div class="package-item" role="article" aria-labelledby="gold-package-heading">
+                        <img src="images/GoldPackage.png" alt="Gold Package">
+                        <h3 id="gold-package-heading">Gold Package</h3>
+                        <p>Best choice for large events with premium services.</p>
+                        <div class="details">
+                            <p><strong>Features:</strong></p>
+                            <p>- All from Silver package plus:</p>
+                            <p>- Staff in attendance to ensure complete perfection</p>
+                            <p>- Finding guest accommodation, booking transport</p>
+                            <p>- Live band entertainment and magician</p>
+                            <p>- Hot and Cold buffet and soft drinks</p>
+                        </div>
+                        <p class="price">$799</p>
+                        <a href="contact.html" class="btn-secondary" aria-label="Choose Bronze Package">Order</a>
+                    </div>
+                    <div class="package-item" role="article" aria-labelledby="custom-package-heading">
+                        <img src="images/CustomPackage.png" alt="Custom Package">
+                        <h3 id="custom-package-heading">Custom Package</h3>
+                        <p>Custom packages are available for specific parties, additional decorations, and additional staff. Contact the company to arrange any custom packages.</p>
+                        <a href="contact.html" class="btn-secondary" aria-label="Contact Us for Custom Package">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="logo" aria-label="Party Time Logo">
+                <img src="images/logo.png" alt="Party Time Logo">
+            </div>
+            <div class="social" role="navigation" aria-label="Social Media Links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="subscription" role="form" aria-labelledby="newsletter-heading">
+                <h3 id="newsletter-heading">Subscribe to our Newsletter</h3>
+                <form>
+                    <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                    <button type="submit" aria-label="Subscribe to Newsletter">Subscribe</button>
+                </form>
+            </div>
+            <p>&copy; 2024 Party Time. All rights reserved.</p>
+            <div class="feedback" role="link" aria-label="Give your feedback">
+                <a href="contact.html#feedback">Give your feedback</a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
