@@ -1,11 +1,9 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Style */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -13,14 +11,12 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Container Style */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-/* Header Style */
 header {
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
@@ -394,28 +390,6 @@ footer .feedback a {
 
 footer .feedback a:hover {
     background: #cf3f1a;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(50px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-section {
-    animation: fadeIn 2s ease-in-out;
 }
 
 @media (max-width: 768px) {
